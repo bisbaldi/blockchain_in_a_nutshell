@@ -43,6 +43,6 @@ Nodes can either be followers, leaders, or candidates to become a leader. Electi
 
 
 #### Sources
-Satoshi Nakamoto - Bitcoin: A Peer-to-Peer Electronic Cash System
-Bentov, Gabizon, Mizrahi - Cryptocurrencies without Proof of Work
-Castro, Liskov - Pracitical Byzantine Fault Tolerance
+* Satoshi Nakamoto - Bitcoin: A Peer-to-Peer Electronic Cash System
+* Bentov, Gabizon, Mizrahi - Cryptocurrencies without Proof of Work
+* Castro, Liskov - Pracitical Byzantine Fault Tolerance
