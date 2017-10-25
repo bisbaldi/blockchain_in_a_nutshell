@@ -39,3 +39,6 @@ creator of next block gets chosen by a combination of factors such as the stake 
 
 ### Proof of Work vs Proof of Stake
 POS is more cost-effective - way less computing power is needed to verify a transaction, and thereby, less electrical power. In POW, should a single entity possess more than 51% of the networks computing power, the chain could be critically influenced. POS may also not be optimal - nothing at stake problem.
+
+### RAFT
+Nodes can either be followers, leaders, or candidates to become a leader. Elections among the nodes are held to determine leaders. Leaders communicate with the clients and broadcast state changes to all followers that replicate the changes themselves.
