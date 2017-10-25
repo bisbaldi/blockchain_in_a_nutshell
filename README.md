@@ -1,8 +1,6 @@
 # blockchain_in_a_nutshell
 a simple summary of blockchain technology
 
-# Blockchain in a Nutshell
-
 ## What is a block?
 Consists of
 * a block number
@@ -23,7 +21,7 @@ Resist mutability, decentralized, no need to keep track of which transactions we
 * Proof of work
 * Proof of stake
 * PBFT (Practical Byzantine Fault Tolerance)
-* Raft (easy to understand consensus algorithm)
+* Raft
 
 ### Byzantine Fault Tolerance
 System tolerates the Byzantine Generals Problem. All nodes agree on a valid version of the chains’ history while not having to trust each other. A consens needs to be found using a consensus algorithm. Also, the history of the chain needs to be verifiable, so that every node can be sure the chain has not been messed around with.
