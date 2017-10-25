@@ -24,7 +24,7 @@ Resist mutability, decentralized, no need to keep track of which transactions we
 * Raft
 
 ### Byzantine Fault Tolerance
-System tolerates the Byzantine Generals Problem. All nodes agree on a valid version of the chains’ history while not having to trust each other. A consens needs to be found using a consensus algorithm. Also, the history of the chain needs to be verifiable, so that every node can be sure the chain has not been messed around with.
+System tolerates the Byzantine Generals Problem. All nodes agree on a valid version of the chains’ history while not having to trust each other. A consens needs to be found using a consensus algorithm. Also, the history of the chain needs to be verifiable, so that every node can be sure the chain has not been messed around with. To further mitigate malicious attacks, nodes should run different implementations of the service code (as is possible with Etherium for instance, as multiple implementations written in different languages are provided).
 
 ### How to make sure the chain has not been fiddled with?
 each block has a certain hash. Should the hash suddenly not meet the criteria mentioned above, the blocks content has changed and the copy of the chain is incorrect. Also, each block points to a previous block. The chain can be followed until the genesis block. If not, the hash where things went wrong can be found. Also multiple copies of the chain can be compared by simply looking at the last block and their hashes. Should all hashes be valid (meeting the criteria), but should one differ from all the others, this copy of the chain has been manipulated. These attacks however are very costly, as all blocks onwards from the manipulated one up to the most recent one would need to be rehashed/”mined”. Way too expensive.
@@ -40,3 +40,9 @@ POS is more cost-effective - way less computing power is needed to verify a tran
 
 ### RAFT
 Nodes can either be followers, leaders, or candidates to become a leader. Elections among the nodes are held to determine leaders. Leaders communicate with the clients and broadcast state changes to all followers that replicate the changes themselves.
+
+
+#### Sources
+Satoshi Nakamoto - Bitcoin: A Peer-to-Peer Electronic Cash System
+Bentov, Gabizon, Mizrahi - Cryptocurrencies without Proof of Work
+Castro, Liskov - Pracitical Byzantine Fault Tolerance
