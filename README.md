@@ -41,6 +41,10 @@ POS is more cost-effective - way less computing power is needed to verify a tran
 ### RAFT
 Nodes can either be followers, leaders, or candidates to become a leader. Elections among the nodes are held to determine leaders. Leaders communicate with the clients and broadcast state changes to all followers that replicate the changes themselves.
 
+## Smart Contracts
+Smart Contracts are a fany new technology supported by the ehterium blockchain. Contracts are stored as a blocks' data and are automatically partially/fully executed once certain conditions are met. They enforce a choreography between the contracts' parties. Moreover, the code can be run on any node using the Ethereum Virtual Machine, and running costs a certain amount of ether to incetivize miners to process the contract. The EVM enables the chain to reach consensus about the porper output of any smart contract based on a set of inputs.
+The EVMs' language, Solidity, reads a bit like javascript, is statically typed, contract-oriented, and turing complete!
+
 
 #### Sources
 * Satoshi Nakamoto - Bitcoin: A Peer-to-Peer Electronic Cash System
